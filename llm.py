@@ -5,6 +5,9 @@ Example: Perform impact analysis using Google Gemini API
 
 import os
 import google.generativeai as genai
+from dotenv import load_dotenv
+load_dotenv()
+
 
 # Load your API key (make sure it's set in environment variables)
 genai.configure(api_key=os.environ["GOOGLE_API_KEY"])
