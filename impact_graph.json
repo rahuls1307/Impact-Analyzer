@@ -1,0 +1,3180 @@
+[
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/BackendApplicationTests.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@SpringBootTest\n@ActiveProfiles(\"test\")\nclass BackendApplicationTests {\n\n\t@Test\n\tvoid contextLoads() {\n\t}\n\n}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "test"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n\tvoid contextLoads() {\n\t}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/service/BondServiceTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\npublic class BondServiceTest {\n\n    @Mock\n    private BondsRepo bondRepo;\n\n    @Inje..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetAllBonds() {\n        List<Bonds> expectedBonds = new ArrayList<>();\n        expectedBonds.a..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetCount() {\n        long expectedCount = 10L;\n\n        Mockito.when(bondRepo.count()).thenRet..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetBondDetails() {\n        String issuer = \"AAPL_25\";\n        Bonds expectedBond = new Bonds()..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL_25"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/service/OrderBookServiceTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\npublic class OrderBookServiceTest {\n\n    @Mock\n    private OrderBookRepo orderBookRe..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testAddOrder() {\n        OrderBook order = new OrderBook();\n        order.setTicker(\"AAPL\");\n     ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetOrderBook() {\n        List<OrderBook> expectedOrders = new ArrayList<>();\n        expectedO..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testUpdateAssetBookBuy() {\n        // Arrange\n        OrderBook order = new OrderBook();\n        o..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "200.0"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testUpdateAssetBookSell() {\n        // Arrange\n        OrderBook order = new OrderBook();\n        ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "200.0"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testUpdateAssetBookForNewAsset() {\n        // Arrange\n        OrderBook order = new OrderBook();\n ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "200.0"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testUpdateCashflowBook_InsufficientVolume() {\n        OrderBook order = new OrderBook();\n        order.se..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testUpdateCashflowBook_InvalidSale() {\n        // Setup an order to sell an asset not in the repository\n ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testUpdateCashFlowBookSell() {\n\n        OrderBook order = new OrderBook();\n        order.setTicker..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/service/StocksServiceTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\npublic class StocksServiceTest {\n\n    @Mock\n    private StocksRepo stocksRepo;\n\n    ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetAllStocks() {\n        List<Stocks> expectedStocks = new ArrayList<>();\n        expectedStoc..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetCount() {\n        long expectedCount = 10;\n        when(stocksRepo.count()).thenReturn(expe..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetStockDetails() {\n        String ticker = \"AAPL\";\n        Stocks expectedStock = new Stocks(..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/service/CashflowBookServiceTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\npublic class CashflowBookServiceTest {\n\n    @Mock\n    private CashflowBookRepo cashf..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetCashflowBook() {\n        List<CashflowBook> expectedCashflows = new ArrayList<>();\n        ..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/service/AssetBookServiceTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\npublic class AssetBookServiceTest {\n\n    @Mock\n    private AssetBookRepo assetBookRe..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetStockAssets() {\n\n        AssetBook asset1 = new AssetBook();\n        asset1.setAssetClass(\"..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetCount() {\n        long expectedCount = 5;\n        Mockito.when(assetBookRepo.count()).thenR..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetAllAssets() {\n        List<AssetBook> expectedAssets = Arrays.asList(new AssetBook(), new A..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetBondAssets() {\n        // Arrange\n        AssetBook asset1 = new AssetBook();\n        asset..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetInstrument() {\n        AssetBook expectedAsset = new AssetBook();\n        String instrument..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/service/BondpricesServiceTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\npublic class BondpricesServiceTest {\n    @Mock\n    private BondpricesRepo bondprices..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetAllBondprices() {\n        // Create sample data\n        Bondprices bond1 = new Bondprices();\n     ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/repo/StocksRepoTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@DataJpaTest\n@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)\n@ActiveProfiles(\"test\")\npublic..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "test"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@BeforeEach\n    void setUp() {\n        stocksRepo.deleteAll();\n\n        Stocks stock1 = new Stocks(\"NYSE\", \"Technology\",..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NYSE"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Technology"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NASDAQ"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Technology"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Alphabet Inc."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testExistsByTickerSymbol() {\n        boolean exists = stocksRepo.existsByTickerSymbol(\"AAPL\");\n        as..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "TSLA"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindByTickerSymbol() {\n        Stocks stock = stocksRepo.findByTickerSymbol(\"AAPL\");\n        assertTh..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NYSE"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindAllBy() {\n        List<TickerSymbol> tickerSymbols = stocksRepo.findAllBy();\n        assertThat(t..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "tickerSymbol"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindAllStocks() {\n        List<Stocks> stocksList = stocksRepo.findAll();\n        assertThat(stocksLi..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple Inc."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testSaveAndDeleteStock() {\n        Stocks stock = new Stocks(\"NYSE\", \"Automotive\", 4000000.0, 800.0, 700...."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NYSE"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Automotive"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "TSLA"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Tesla Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "TSLA"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Tesla Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "TSLA"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/repo/OrderBookRepoTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@DataJpaTest\n@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)\n@ActiveProfiles(\"test\")\npublic..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "test"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@BeforeEach\n    void setUp() {\n        orderBookRepo.deleteAll();\n\n        OrderBook order1 = new OrderBook(\"AAPL\", 10, ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-02-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testSaveAndFindOrder() {\n        OrderBook newOrder = new OrderBook(\"MSFT\", 20, \"BUY\", Date.valueOf(\"2024..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-03-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-03-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindAllOrders() {\n        List<OrderBook> orderList = orderBookRepo.findAll();\n        assertThat(ord..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testDeleteOrder() {\n        OrderBook order = orderBookRepo.findAll().get(0);\n        orderBookRepo.delet..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testUpdateOrder() {\n        OrderBook order = orderBookRepo.findAll().get(0);\n        order.setVolume(15)..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/repo/BondpricesRepoTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@DataJpaTest\n@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)\n@ActiveProfiles(\"test\")\npublic..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "test"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testSaveAndFindBondprice() {\n        bondpricesRepo.deleteAll();\n        Bondprices newBondPrice = new Bo..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NEWBOND2024"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-09-30"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NEWBOND2024"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-09-30"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindAllBondprices() {\n        List<Bondprices> bondPricesList = bondpricesRepo.findAll();\n        ass..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testDeleteBondprice() {\n        Bondprices bondPrice = bondpricesRepo.findAll().get(0);\n        bondprice..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testUpdateBondprice() {\n        Bondprices bondPrice = bondpricesRepo.findAll().get(0);\n        bondPrice..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/repo/CashflowBookRepoTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@DataJpaTest\n@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)\n@ActiveProfiles(\"test\")\npublic..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "test"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@BeforeEach\n    void setUp() {\n        cashflowBookRepo.deleteAll();\n\n        CashflowBook cashflow1 = new CashflowBook(..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-02-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "US GOV"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-03-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testSaveAndFindCashflow() {\n        CashflowBook newCashflow = new CashflowBook(Date.valueOf(\"2024-04-01\"..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-04-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindAllCashflows() {\n        List<CashflowBook> cashflowList = cashflowBookRepo.findAll();\n        as..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testDeleteCashflow() {\n        CashflowBook cashflow = cashflowBookRepo.findAll().get(0);\n        cashflo..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testUpdateCashflow() {\n        CashflowBook cashflow = cashflowBookRepo.findAll().get(0);\n        cashflo..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/repo/BondsRepoTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@DataJpaTest\n@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)\n@ActiveProfiles(\"test\")\npublic..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "test"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@BeforeEach\n    void setUp() {\n        bondsRepo.deleteAll();\n\n        Bonds bond1 = new Bonds(\"GOVT2025\", \"US Governmen..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOVT2025"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "US Government"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2025-12-31"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAA"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "CORP2030"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "ABC Corp"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2030-05-15"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BBB"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MUN2028"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "XYZ Municipality"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2028-03-10"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AA"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindByIssuer() {\n        Bonds bond = bondsRepo.findByIssuer(\"US Government\");\n        assertThat(bon..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "US Government"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "US Government"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOVT2025"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2025-12-31"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAA"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindByTickerSymbol() {\n        Bonds bond = bondsRepo.findByTickerSymbol(\"CORP2030\");\n        assertT..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "CORP2030"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "ABC Corp"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2030-05-15"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BBB"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testSaveAndFindBond() {\n        Bonds newBond = new Bonds(\"NEWBOND2024\", \"New Issuer\", 2.5, 2000.0, Date...."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NEWBOND2024"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "New Issuer"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-09-30"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AA-"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "New Issuer"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NEWBOND2024"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-09-30"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AA-"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testDeleteBond() {\n        Bonds bond = bondsRepo.findByIssuer(\"XYZ Municipality\");\n        assertThat(bo..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "XYZ Municipality"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MUN2028"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/repo/AssetBookRepoTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@DataJpaTest\n@AutoConfigureTestDatabase(replace = AutoConfigureTestDatabase.Replace.NONE)\n@ActiveProfiles(\"test\")// Use ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "test"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@BeforeEach\n    void setUp() {\n        assetBookRepo.deleteAll();\n\n        AssetBook asset1 = new AssetBook(\"Stocks\", \"A..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-02"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "TSLA"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-03"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindByInstrumentName() {\n        AssetBook asset = assetBookRepo.findByInstrumentName(\"AAPL\");\n      ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testExistsByInstrumentName() {\n        boolean exists = assetBookRepo.existsByInstrumentName(\"GOOGL\");\n  ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindByAssetClass() {\n        List<AssetBook> techAssets = assetBookRepo.findByAssetClass(\"Stocks\");\n ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testFindAllBy() {\n        List<InstrumentName> instruments = assetBookRepo.findAllBy();\n        assertTha..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/rest/BondpricesRestControllerTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@WebMvcTest(BondpricesRestController.class)\npublic class BondpricesRestControllerTest {\n    @Autowired\n    private MockM..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetAllBondprices() throws Exception {\n        // Create sample data\n        Bondprices bond1 = new Bo..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/bondprices"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].tickerSymbol"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].price"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].tickerSymbol"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].price"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/rest/AssetBookRestControllerTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@WebMvcTest(AssetBookRestController.class)\nclass AssetBookRestControllerTest {\n\n    @Autowired\n    private MockMvc mockM..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetAssetBook() throws Exception {\n        AssetBook asset1 = new AssetBook(\"Stocks\", \"AAPL\", Date.val..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "[{'assetClass':'Stocks','instrumentName':'AAPL','datePurchased':'2023-01-01','volume':10,'boughtPrice':120.0,'currentPri"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "{'assetClass':'Stocks','instrumentName':'GOOGL','datePurchased':'2023-01-01','volume':5,'boughtPrice':150.0,'currentPric"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetStocks() throws Exception {\n        AssetBook stock1 = new AssetBook(\"Stocks\", \"AAPL\", Date.valueO..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets/stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "[{'assetClass':'Stocks','instrumentName':'AAPL','datePurchased':'2023-01-01','volume':10,'boughtPrice':120.0,'currentPri"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "{'assetClass':'Stocks','instrumentName':'GOOGL','datePurchased':'2023-01-01','volume':5,'boughtPrice':150.0,'currentPric"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetBonds() throws Exception {\n        AssetBook bond1 = new AssetBook(\"Bonds\", \"US10Y\", Date.valueOf(..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "US10Y"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "CORPBOND"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets/bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "[{'assetClass':'Bonds','instrumentName':'US10Y','datePurchased':'2023-01-01','volume':10,'boughtPrice':100.0,'currentPri"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "{'assetClass':'Bonds','instrumentName':'CORPBOND','datePurchased':'2023-01-01','volume':5,'boughtPrice':105.0,'currentPr"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetAssetClassDistribution() throws Exception {\n        AssetBook asset1 = new AssetBook(\"Stocks\", \"AA..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "US10Y"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets/charts/asset_classes"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "{\\\"Stocks\\\":1200.0,\\\"Bonds\\\":500.0}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetInstrumentsDistribution() throws Exception {\n        AssetBook asset1 = new AssetBook(\"Stocks\", \"A..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets/charts/instruments"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "{\\\"GOOGL\\\":750.0,\\\"AAPL\\\":1200.0}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetTimeseriesData() throws Exception {\n        when(stockAPIService.getTimeseriesData(\"AAPL\")).thenRe..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Sample Time Series Data"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets/charts/timeseries/AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Sample Time Series Data"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetInstrumentPnl() throws Exception {\n        AssetBook assetBook = new AssetBook(\"Stocks\", \"AAPL\", D..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets/charts/pnl/AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "{\\\"Profit\\\":100.0,\\\"Loss\\\":0.0}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetPnlDistribution() throws Exception {\n        AssetBook asset1 = new AssetBook(\"Stocks\", \"AAPL\", Da..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2023-01-01"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets/charts/pnl_distribution"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "{\\\"unrealizedPnl\\\":150.0,\\\"realizedPnl\\\":0.0,\\\"netPnl\\\":150.0}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/rest/CashflowBookRestControllerTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@WebMvcTest(CashflowBookRestController.class)\npublic class CashflowBookRestControllerTest {\n\n    @Autowired\n    private ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@BeforeEach\n    void setUp() {\n        // Initialize your test data here\n        CashflowBook cashflowBook1 = new Cashfl..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-08-15"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-08-16"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetCashflowBook() throws Exception {\n        when(cashflowBookService.getCashflowBook()).thenReturn(c..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/viewbook/cashflow"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].date"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-08-15"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].asset_class"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].amount"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].realizedpnl"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].instrumentName"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].volume"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].price"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].date"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-08-16"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].asset_class"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].amount"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].realizedpnl"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].instrumentName"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].volume"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].price"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetOrderBook() throws Exception {\n\n        mockMvc.perform(MockMvcRequestBuilders.get(\"/viewbook/orde..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/viewbook/orderbook"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetTotalCashflowInvestments() throws Exception {\n        when(cashflowBookService.getTotalInvestments..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/viewbook/cashflow/total-investments"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "3000.0"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testGetTotalCashflowProfit() throws Exception {\n        when(cashflowBookService.getTotalProfit()).thenRe..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/viewbook/cashflow/total-profit"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "125.0"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/rest/BondsRestControllerTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@WebMvcTest(BondsRestController.class)\n@AutoConfigureMockMvc\npublic class BondsRestControllerTest {\n\n    @Autowired\n    ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@BeforeEach\n    public void setup() {\n        MockitoAnnotations.openMocks(this);\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetBonds() throws Exception {\n        Bonds bond1 = new Bonds();\n        bond1.setTickerSymbol..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2020-12-31"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AA"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Alphabet Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2024-12-31"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AA+"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].tickerSymbol"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0].issuer"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].tickerSymbol"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "GOOGL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1].issuer"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Alphabet Inc."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetBondDetails() throws Exception {\n        Bonds bond = new Bonds();\n        bond.setTickerSy..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2020-12-31"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AA"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/bonds/issuer/Apple"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.tickerSymbol"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.issuer"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.couponRate"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.faceValue"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.maturityDate"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "2020-12-31"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.creditRating"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AA"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.bondPrice"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/rest/StocksRestControllerTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\n@WebMvcTest(StocksRestController.class)\npublic class StocksRestControllerTest {\n    ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetAllStocks() throws Exception {\n        Stocks stock1 = new Stocks();\n        stock1.setTick..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Technology"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NASDAQ"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "MSFT"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Microsoft Corporation"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Technology"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NASDAQ"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[0]"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$[1]"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testGetStockDetails() throws Exception {\n        String ticker = \"AAPL\";\n        Stocks stock = ne..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Apple Inc."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Technology"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "NASDAQ"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/stocks/ticker/{ticker}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.tickerSymbol"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.companyName"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/test/java/com/stock_portfolio/backend/rest/OrderBookRestControllerTest.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@ExtendWith(MockitoExtension.class)\n@WebMvcTest(OrderBookRestController.class)\npublic class OrderBookRestControllerTest ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testAddOrder_Success() throws Exception {\n        OrderBook order = new OrderBook();\n        order..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/order"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "application/json"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.instrumentName"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testAddOrder_InsufficientVolume() throws Exception {\n        OrderBook order = new OrderBook();\n        o..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Insufficient volume to complete the sell order."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/order"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "application/json"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.error"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Insufficient volume to complete the sell order."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    void testAddOrder_InvalidSale() throws Exception {\n        OrderBook order = new OrderBook();\n        order.se..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Cannot sell an instrument which is not owned"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/order"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "application/json"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.error"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Cannot sell an instrument which is not owned"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Test\n    public void testAddOrder_Error() throws Exception {\n        OrderBook order = new OrderBook();\n        order.s..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "AAPL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Error processing order"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/order"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "application/json"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "$.error"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Error processing order"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/BackendApplication.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@SpringBootApplication\n@CrossOrigin(origins = \"*\",methods = {RequestMethod.DELETE, RequestMethod.GET, RequestMethod.PUT,..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "*"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public static void main(String[] args) {\n\t\tSpringApplication.run(BackendApplication.class, args);\n\t}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/config/RestTemplateConfig.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Configuration\npublic class RestTemplateConfig {\n\n    @Bean\n    public RestTemplate restTemplate() {\n        return new ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@Bean\n    public RestTemplate restTemplate() {\n        return new RestTemplate();\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/entity/OrderBook.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Entity\npublic class OrderBook {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private int no;\n   ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getTicker() {\n        return ticker;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setTicker(String ticker) {\n        this.ticker = ticker;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Integer getVolume() {\n        return volume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setVolume(Integer volume) {\n        this.volume = volume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getAction() {\n        return action;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setAction(String action) {\n        this.action = action;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Date getDatePurchased() {\n        return datePurchased;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setDatePurchased(Date date_purchased) {\n        this.datePurchased = date_purchased;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getAsset_class() {\n        return asset_class;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setAsset_class(String asset_class) {\n        this.asset_class = asset_class;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double getAmount() {\n        return amount;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setAmount(Double amount) {\n        this.amount = amount;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public int getNo() {\n        return no;\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/entity/Stocks.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Entity\npublic class Stocks {\n    @Id\n    @Column(length = 100)\n    private String tickerSymbol;\n    @Column(length = 10..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getTickerSymbol() {\n        return tickerSymbol;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setTickerSymbol(String tickerSymbol) {\n        this.tickerSymbol = tickerSymbol;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getCurrentPrice() {\n        return currentPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setCurrentPrice(double currentPrice) {\n        this.currentPrice = currentPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getLowPrice() {\n        return lowPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setLowPrice(double lowPrice) {\n        this.lowPrice = lowPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getHighPrice() {\n        return highPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setHighPrice(double highPrice) {\n        this.highPrice = highPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getAverageVolume() {\n        return averageVolume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setAverageVolume(double averageVolume) {\n        this.averageVolume = averageVolume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getMarketExchange() {\n        return marketExchange;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setMarketExchange(String marketExchange) {\n        this.marketExchange = marketExchange;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getIndustry() {\n        return industry;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setIndustry(String industry) {\n        this.industry = industry;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getCompanyName() {\n        return companyName;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setCompanyName(String companyName) {\n        this.companyName = companyName;\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/entity/Bonds.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Entity\npublic class Bonds {\n    @Id\n    @Column(length = 100)\n    private String tickerSymbol;\n    @Column(length = 100..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getTickerSymbol() {\n        return tickerSymbol;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setTickerSymbol(String tickerSymbol) {\n        this.tickerSymbol = tickerSymbol;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getBondPrice() {\n        return bondPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setBondPrice(double bondPrice) {\n        this.bondPrice = bondPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getCreditRating() {\n        return creditRating;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setCreditRating(String creditRating) {\n        this.creditRating = creditRating;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Date getMaturityDate() {\n        return maturityDate;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setMaturityDate(Date maturityDate) {\n        this.maturityDate = maturityDate;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getFaceValue() {\n        return faceValue;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setFaceValue(double faceValue) {\n        this.faceValue = faceValue;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getIssuer() {\n        return issuer;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setIssuer(String issuer) {\n        this.issuer = issuer;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getCouponRate() {\n        return couponRate;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setCouponRate(double couponRate) {\n        this.couponRate = couponRate;\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/entity/AssetBook.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Entity\npublic class AssetBook {\n\n    @Column(length = 100, nullable = false)\n    private String assetClass;\n    @Id\n   ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getAssetClass() {\n        return assetClass;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setAssetClass(String assetClass) {\n        this.assetClass = assetClass;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getInstrumentName() {\n        return instrumentName;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setInstrumentName(String instrumentName) {\n        this.instrumentName = instrumentName;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Date getDatePurchased() {\n        return datePurchased;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setDatePurchased(Date datePurchased) {\n        this.datePurchased = datePurchased;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Integer getVolume() {\n        return volume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setVolume(Integer volume) {\n        this.volume = volume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double getBoughtPrice() {\n        return boughtPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setBoughtPrice(Double boughtPrice) {\n        this.boughtPrice = boughtPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double getCurrentPrice() {\n        return currentPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setCurrentPrice(Double currentPrice) {\n        this.currentPrice = currentPrice;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getPnl() {\n        return pnl;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setPnl(double pnl) {\n        this.pnl = pnl;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getPnlPct() {\n        return pnlPct;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setPnlPct(double pnlPct) {\n        this.pnlPct = pnlPct;\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/entity/Bondprices.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Entity\npublic class Bondprices {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private Integer se..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getTickerSymbol() {\n        return tickerSymbol;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setTickerSymbol(String tickerSymbol) {\n        this.tickerSymbol = tickerSymbol;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double getPrice() {\n        return price;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setPrice(Double price) {\n        this.price = price;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Date getOnDate() {\n        return onDate;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Integer getSerialNo() {\n        return serialNo;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setOnDate(Date onDate) {\n        this.onDate = onDate;\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/entity/CashflowBook.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Entity\npublic class CashflowBook {\n    @Id\n    @GeneratedValue(strategy = GenerationType.IDENTITY)\n    private int no;\n..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Date getDate() {\n        return date;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setDate(Date date) {\n        this.date = date;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getAsset_class() {\n        return assetClass;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setAsset_class(String asset_class) {\n        this.assetClass = asset_class;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double getAmount() {\n        return amount;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setAmount(Double amount) {\n        this.amount = amount;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double getRealizedpnl() {\n        return realizedpnl;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setRealizedpnl(Double realizedpnl) {\n        this.realizedpnl = realizedpnl;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public int getNo() {\n        return no;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getInstrumentName() {\n        return instrumentName;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setInstrumentName(String instrumentName) {\n        this.instrumentName = instrumentName;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Integer getVolume() {\n        return volume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setVolume(Integer volume) {\n        this.volume = volume;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double getPrice() {\n        return price;\n    }"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void setPrice(Double price) {\n        this.price = price;\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/service/StocksService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Service\npublic class StocksService {\n    @Autowired\n    private StockAPIService stockAPIService;\n    @Autowired\n    pri..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<Stocks> getAllStocks(){\n        logger.debug(\"Getting all stocks\");\n        updateStockPrices();\n        ret..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting all stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public long getCount(){\n        logger.debug(\"Getting count of all stocks\");\n        return this.stocksRepo.count();\n   ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting count of all stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Stocks getStockDetails(String ticker){\n        logger.debug(\"Getting details of stock with ticker: {}\",ticker);\n ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting details of stock with ticker: {}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void updateStockPrices(){\n        logger.debug(\"Updating current prices\");\n        List<TickerSymbol> symbols = s..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Updating current prices"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/service/BondpricesService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Service\npublic class BondpricesService {\n    @Autowired\n    private BondpricesRepo bondpricesRepo;\n\n    public List<Bon..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<Bondprices> getAllBondprices(){\n        return bondpricesRepo.findAll();\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/service/StockAPIService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Service\npublic class StockAPIService {\n    private final RestTemplate restTemplate;\n\n    public StockAPIService(RestTem..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "https://finance.yahoo.com/quote/%s"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getStockPrice(String ticker) {\n//        String apiUrl = \"https://financialmodelingprep.com/api/v3/quote-s..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "fin-streamer.livePrice"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "data-value"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Price element not found for ticker: "
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Failed to fetch stock price"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "private static Document fetchDocumentWithRetries(String url) throws Exception {\n        int attempts = 0;\n        Docume..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "fin-streamer.livePrice"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Failed to retrieve document with desired elements after "
+        },
+        {
+          "type": "string_literal",
+          "snippet": " attempts."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public String getTimeseriesData(String symbol) {\n        WebClient.Builder webClientBuilder = WebClient.builder();\n     ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "https://www.alphavantage.co/query?function=TIME_SERIES_DAILY&symbol="
+        },
+        {
+          "type": "string_literal",
+          "snippet": "&outputsize=compact&apikey=1EF50X7O04KLX8YM"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/service/CashflowBookService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Service\npublic class CashflowBookService {\n\n    @Autowired\n    private CashflowBookRepo cashflowBookRepo;\n\n    private ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<CashflowBook> getCashflowBook(){\n        logger.debug(\"Getting Cashflow book\");\n        return cashflowBookR..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting Cashflow book"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getTotalInvestments() {\n        logger.debug(\"Getting total investments\");\n        return cashflowBookRepo..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting total investments"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public double getTotalProfit() {\n        logger.debug(\"Getting total profits made\");\n        List<CashflowBook> cashflow..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting total profits made"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/service/BondService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Service\npublic class BondService {\n    @Autowired\n    private BondsRepo bondRepo;\n    private static final Logger logge..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<Bonds> getAllBonds(){\n        logger.debug(\"Getting all bonds\");\n        return bondRepo.findAll();\n    }"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting all bonds"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public long getCount(){\n        logger.debug(\"Getting count of all bonds\");\n        return this.bondRepo.count();\n    }"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting count of all bonds"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Bonds getBondDetails(String issuer){\n        logger.debug(\"Getting details of bond by issuer: {}\",issuer);\n      ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting details of bond by issuer: {}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/service/OrderBookService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Service\npublic class OrderBookService {\n\n    private static final Logger logger = LoggerFactory.getLogger(OrderBookServ..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public OrderBook addOrder(OrderBook order){\n        logger.debug(\"Adding order with details: {}\", order);\n        OrderB..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Adding order with details: {}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<OrderBook> getOrderBook(){\n        logger.debug(\"Fetching orderbook\");\n        return orderBookRepo.findAll(..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Fetching orderbook"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public AssetBook updateAssetBook(OrderBook order) {\n        AssetBook asset = new AssetBook();\n        logger.debug(\"Upd..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Updating Asset Book..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Checking if instrument is in asset book"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Instrument in asset book with details: {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Modifying volume for SELL transaction"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BUY"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Modifying volume and buy price for BUY transaction"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Updating current price of the instrument"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Saving into asset book with details: {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Instrument not in asset book, adding it"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Fetching current price of {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Fetching current price of {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Saving into asset book with details: {}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public CashflowBook updateCashFlowBook(OrderBook order){\n        logger.debug(\"Updating Cashflow book...\");\n        logg..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Updating Cashflow book..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Checking if instrument is held to validate a sell"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Cannot sell an instrument which is not owned"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Instrument is in possession"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Checking if volume held is higher than sell volume"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Cannot sell higher volume than what is held"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Volume constraint satisfied"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Calculating realized Profit/Loss"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Saving into cashflow book with details: {}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Double updateCurrentPrice(String symbol) {\n        String price = stockAPIService.getStockPrice(symbol);\n//      ..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/service/AssetBookService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@Service\npublic class AssetBookService {\n\n    @Autowired\n    private AssetBookRepo assetBookRepo;\n    @Autowired\n    pri..."
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<AssetBook> getAllAssets(){\n        logger.debug(\"Getting all assets\");\n        updateCurrentPrices();\n      ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting all assets"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public long getCount(){\n        logger.debug(\"Getting count of all assets\");\n        return assetBookRepo.count();\n    }"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting count of all assets"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<AssetBook> getStockAssets(){\n        logger.debug(\"Getting all stocks assets\");\n        updateCurrentPrices(..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting all stocks assets"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<AssetBook> getBondAssets(){\n        logger.debug(\"Getting all bonds assets\");\n//        updateCurrentPrices(..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting all bonds assets"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Bonds"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public void updateCurrentPrices(){\n        logger.debug(\"Updating current prices\");\n        List<InstrumentName> symbols..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Updating current prices"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public AssetBook getInstrument(String instrument) {\n        logger.debug(\"Getting instrument: {}\",instrument);\n        r..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Getting instrument: {}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/exception/InvalidSaleException.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "public class InvalidSaleException extends RuntimeException{\n    public InvalidSaleException(String message){\n        sup..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/exception/InsufficientVolumeException.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "public class InsufficientVolumeException extends RuntimeException{\n    public InsufficientVolumeException(String message..."
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/repo/AssetBookRepo.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "method_declaration",
+          "snippet": "public AssetBook findByInstrumentName(String name);"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public boolean existsByInstrumentName(String ticker);"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<AssetBook> findByAssetClass(String stocks);"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<InstrumentName> findAllBy();"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/repo/StocksRepo.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "method_declaration",
+          "snippet": "public boolean existsByTickerSymbol(String ticker);"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Stocks findByTickerSymbol(String ticker);"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public List<TickerSymbol> findAllBy();"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/repo/BondsRepo.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "method_declaration",
+          "snippet": "public Bonds findByIssuer(String issuer);"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public Bonds findByTickerSymbol(String ticker_symbol);"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/rest/BondsRestController.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@RestController\n@RequestMapping(\"/bonds\")\n@CrossOrigin(origins = \"*\",methods = {RequestMethod.DELETE, RequestMethod.GET,..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "*"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "BondsRestController"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping\n    public List<Bonds> getBonds() {\n        logger.debug(\"Received request to get all bonds\");\n        retur..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get all bonds"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/issuer/{issuer}\")\n    public Bonds getBondDetails(@PathVariable(\"issuer\") String issuer) {\n        logger...."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/issuer/{issuer}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "issuer"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get bonds of issuer: {}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/rest/StocksRestController.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@RestController\n@RequestMapping(\"/stocks\")\n@CrossOrigin(origins = \"*\",methods = {RequestMethod.DELETE, RequestMethod.GET..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "*"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "StocksRestController"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping\n    public List<Stocks> getAllStocks() {\n        logger.debug(\"Received request to get all stocks\");\n       ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get all stocks"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/ticker/{ticker}\")\n    public Stocks getStockDetails(@PathVariable String ticker){\n        logger.debug(\"Re..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/ticker/{ticker}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get stock with ticker: {}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/rest/OrderBookRestController.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@RestController\n@RequestMapping(\"/order\")\n@CrossOrigin(origins = \"*\",methods = {RequestMethod.DELETE, RequestMethod.GET,..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/order"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "*"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@PostMapping\n    @Transactional\n    public ResponseEntity<Object> addOrder(@RequestBody OrderBook order){\n        logger..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to add order: {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "SELL"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Cashflowbook entry added successfully"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Order added successfully: {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Assetbook entry added successfully: {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "error"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "error"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "error"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/rest/AssetBookRestController.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@RestController\n@RequestMapping(\"/assets\")\n@CrossOrigin(origins = \"*\",methods = {RequestMethod.DELETE, RequestMethod.GET..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/assets"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "*"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping\n    public List<AssetBook> getAssetBook(){\n        logger.debug(\"Received request to get asset book\");\n     ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get asset book"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/stocks\")\n    public List<AssetBook> getStocks() {\n        logger.debug(\"Received request to get all stocks..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/stocks"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get all stocks from asset book"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/bonds\")\n    public List<AssetBook> getBonds() {\n        logger.debug(\"Received request to get all bonds fr..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/bonds"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get all bonds from asset book"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/charts/asset_classes\")\n    public ResponseEntity<Map<String, Double>> getAssetClassDistribution(){\n       ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/charts/asset_classes"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get charts from asset book data"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/charts/instruments\")\n    public ResponseEntity<Map<String, Double>> getInstrumentsDistribution(){\n        ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/charts/instruments"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get charts of instruments from asset book data"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"charts/timeseries/{instrument}\")\n    public ResponseEntity<String> getTimeseriesData(@PathVariable String i..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "charts/timeseries/{instrument}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get time series data of {}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"charts/pnl/{instrument}\")\n    public ResponseEntity<Map<String, Double>> getInstrumentPnl(@PathVariable Str..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "charts/pnl/{instrument}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get pnl chart of {}"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Profit"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Loss"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Loss"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Profit"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"charts/pnl_distribution\")\n    public ResponseEntity<Map<String, Double>> getPnlDistribution(){\n        logg..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "charts/pnl_distribution"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get pnl distribution chart"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "realizedPnl"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "unrealizedPnl"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "netPnl"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/rest/BondpricesRestController.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@RestController\n@RequestMapping(\"/bondprices\")\n@CrossOrigin(origins = \"*\",methods = {RequestMethod.DELETE, RequestMethod..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/bondprices"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "*"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping\n    public List<Bondprices> getBondprices() {\n        return bondpricesService.getAllBondprices();\n    }"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/rest/CashflowBookRestController.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "@RestController\n@RequestMapping(\"/viewbook\")\n@CrossOrigin(origins = \"*\",methods = {RequestMethod.DELETE, RequestMethod.G..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/viewbook"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "*"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/cashflow\")\n    public List<CashflowBook> getCashflowBook(){\n        logger.debug(\"Received request to get ..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/cashflow"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get cashflow book"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/orderbook\")\n    public List<OrderBook> getOrderBook(){\n        logger.debug(\"Received request to get order..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/orderbook"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get order book"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/cashflow/total-investments\")\n    public ResponseEntity<Double> getTotalCashflowInvestments() {\n        log..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/cashflow/total-investments"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get total investment amount"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Total cashflow investments: {}"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "@GetMapping(\"/cashflow/total-profit\")\n    public ResponseEntity<Double> getTotalCashflowProfit() {\n        logger.debug(..."
+        },
+        {
+          "type": "string_literal",
+          "snippet": "/cashflow/total-profit"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Received request to get total profit made"
+        },
+        {
+          "type": "string_literal",
+          "snippet": "Total cashflow profit: {}"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/projection/TickerSymbol.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "method_declaration",
+          "snippet": "String getTickerSymbol();"
+        }
+      ]
+    },
+    {
+      "file": "/Users/srahulshanker/tree_sitter_repos/backend-server/backend/src/main/java/com/stock_portfolio/backend/projection/InstrumentName.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "method_declaration",
+          "snippet": "String getInstrumentName();"
+        }
+      ]
+    }
+  ]

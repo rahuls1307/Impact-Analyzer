@@ -1,0 +1,77 @@
+[
+    {
+      "file": "/repos/backend-service/src/main/java/com/example/backend/service/UserService.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "public class UserService"
+        },
+        {
+          "type": "field_declaration",
+          "snippet": "private UserRepository userRepository;"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public User getUserById(Long id)"
+        },
+        {
+          "type": "method_invocation",
+          "snippet": "userRepository.findById(id)"
+        },
+        {
+          "type": "annotation",
+          "snippet": "@Service"
+        }
+      ]
+    },
+    {
+      "file": "/repos/backend-service/src/main/java/com/example/backend/repository/UserRepository.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "public interface UserRepository extends JpaRepository<User, Long>"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "Optional<User> findById(Long id)"
+        },
+        {
+          "type": "annotation",
+          "snippet": "@Repository"
+        }
+      ]
+    },
+    {
+      "file": "/repos/frontend-app/src/main/java/com/example/frontend/controller/UserController.java",
+      "language": "java",
+      "features": [
+        {
+          "type": "class_declaration",
+          "snippet": "public class UserController"
+        },
+        {
+          "type": "field_declaration",
+          "snippet": "private UserService userService;"
+        },
+        {
+          "type": "method_declaration",
+          "snippet": "public ResponseEntity<User> getUser(Long id)"
+        },
+        {
+          "type": "method_invocation",
+          "snippet": "userService.getUserById(id)"
+        },
+        {
+          "type": "annotation",
+          "snippet": "@RestController"
+        },
+        {
+          "type": "annotation",
+          "snippet": "@GetMapping(\"/users/{id}\")"
+        }
+      ]
+    }
+  ]
+  

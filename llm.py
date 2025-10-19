@@ -33,7 +33,7 @@ def analyze_impact(change_description: str, context: str) -> str:
     """
 
     # Create the model (Gemini 1.5 Pro or Flash are current)
-    model = genai.GenerativeModel("gemini-1.5-flash")
+    model = genai.GenerativeModel("gemini-pro-latest")
 
     response = model.generate_content(prompt)
     return response.text.strip()

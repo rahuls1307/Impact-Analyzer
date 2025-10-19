@@ -2,3 +2,60 @@ fastapi==0.115.0
 uvicorn[standard]==0.30.6
 google-generativeai
 python-dotenv==1.0.1
+
+# Database Artifact Extraction
+sqlparse==0.4.4
+
+# API Artifact Extraction
+# (No additional dependencies - using regex)
+
+# Config Artifact Extraction
+PyYAML==6.0.1
+
+# Dependency Extraction
+# (No additional dependencies - using built-in json, xml)
+
+# Code Token Extraction (Tree-sitter)
+tree-sitter==0.20.4
+tree-sitter-python==0.20.4
+tree-sitter-java==0.20.4
+tree-sitter-javascript==0.20.4
+tree-sitter-typescript==0.20.4
+tree-sitter-go==0.20.4
+
+# Alternative: If you want to use AST parsing instead of tree-sitter
+# ast-tools==0.1.0  # Optional
+
+# Caching and Performance
+diskcache==5.6.3
+# or
+# redis==5.0.1  # If you want Redis caching
+
+# File Processing
+pathlib2==2.3.7  # For older Python versions
+# (pathlib is built-in for Python 3.4+)
+
+# JSON and Data Processing
+jsonschema==4.20.0
+
+# Optional: For better regex performance
+regex==2023.12.25
+
+# Optional: For parallel processing
+concurrent-futures==3.1.1  # For Python < 3.2
+# (concurrent.futures is built-in for Python 3.2+)
+
+# Optional: For async processing
+aiofiles==23.2.1
+
+# Optional: For better error handling
+tenacity==8.2.3
+
+# Optional: For logging
+loguru==0.7.2
+
+# Optional: For configuration management
+pydantic-settings==2.1.0
+
+gitpython
+tree-sitter==0.20.4
