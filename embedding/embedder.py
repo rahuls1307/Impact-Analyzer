@@ -1,5 +1,6 @@
 import torch
 from transformers import AutoTokenizer, AutoModel
+import numpy as np
 
 class CodeEmbedder:
     def __init__(self, model_name="microsoft/graphcodebert-base"):
@@ -28,9 +29,18 @@ class CodeEmbedder:
 
         with torch.no_grad():
             outputs = self.model(**inputs)
+        # Mean-pool the token embeddings and flatten to 1D
+        embedding = outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
+
+        # ✅ Normalize the embedding to unit length
+        norm = np.linalg.norm(embedding)
+        if norm > 0:
+            embedding = embedding / norm
+
+        return embedding
 
         # Mean-pool the token embeddings and flatten to 1D
-        return outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
+        # return outputs.last_hidden_state.mean(dim=1).squeeze().cpu().numpy()
 
     def batch_embed(self, chunks):
         """

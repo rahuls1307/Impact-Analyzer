@@ -1,0 +1,43 @@
+{
+  "ids": [
+    [
+      "Todo-List-Application-Java_Main.java_0",
+      "Todo-List-Application-Java_Task.java_0",
+      "Todo-List-Application-Java_Task.java_1"
+    ]
+  ],
+  "embeddings": null,
+  "documents": [
+    [
+      "public static void main(String[] args) {\r\n\r\n\r\n        TodoList toDoList = new TodoList();\r\n\r\n        toDoList.start();\r\n    }",
+      "public String getId() {\r\n        return id;\r\n    }",
+      "public String getTitle() {\r\n        return title;\r\n    }"
+    ]
+  ],
+  "uris": null,
+  "included": ["metadatas", "documents", "distances"],
+  "data": null,
+  "metadatas": [
+    [
+      {
+        "language": "java",
+        "chunk_type": "function",
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Main.java"
+      },
+      {
+        "chunk_type": "function",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "repo": "Todo-List-Application-Java",
+        "language": "java"
+      },
+      {
+        "language": "java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "repo": "Todo-List-Application-Java",
+        "chunk_type": "function"
+      }
+    ]
+  ],
+  "distances": [[24.222183227539062, 31.066852569580078, 31.302562713623047]]
+}

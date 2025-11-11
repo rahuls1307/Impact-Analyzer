@@ -1,0 +1,650 @@
+[
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Main.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Main.java_0",
+        "chunk": "public static void main(String[] args) {\r\n\r\n\r\n        TodoList toDoList = new TodoList();\r\n\r\n        toDoList.start();\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Main.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_Main.java_0",
+        "chunk": "public class Main {\r\n\r\n    /**\r\n     * To run the program, we will create a TodoList Object\r\n     * then we will run start on it\r\n     *\r\n     * Example of a task to add (pay attention to white space):\r\n     * 5, brew beer,01-12-2020,in-progress,Hangouts\r\n     *\r\n     * Example of a file path to read from or save to\r\n     * /XXXX/XXXX/XXXX/file.txt\r\n     *\r\n     *\r\n     * After reading press 5 to display the tasks that were read from the file.\r\n     *\r\n     * Enjoy using the program!\r\n     *\r\n     */\r\n    public static void main(String[] args) {\r\n\r\n\r\n        TodoList toDoList = new TodoList();\r\n\r\n        toDoList.start();\r\n    }\r\n\r\n\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_0",
+        "chunk": "public String getId() {\r\n        return id;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_1",
+        "chunk": "public String getTitle() {\r\n        return title;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_2",
+        "chunk": "public LocalDate getDueDate() {\r\n        return dueDate;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_3",
+        "chunk": "public String getStatus() {\r\n        return status;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_4",
+        "chunk": "public String getProjectName() {\r\n        return projectName;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_5",
+        "chunk": "public void setId(String id) {\r\n        this.id = id;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_6",
+        "chunk": "public void setTitle(String title) {\r\n        this.title = title;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_7",
+        "chunk": "public void setDueDate(LocalDate dueDate) {\r\n        this.dueDate = dueDate;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_8",
+        "chunk": "public void setStatus(String status) {\r\n        this.status = status;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_9",
+        "chunk": "public void setProjectName(String projectName) {\r\n        this.projectName = projectName;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_10",
+        "chunk": "public static Task buildTask(String id, String title, LocalDate dueDate, String status, String projectName) {\r\n        Task task = new Task();\r\n\r\n        task.setId(id);\r\n        task.setTitle(title);\r\n        task.setDueDate(dueDate);\r\n        task.setStatus(status);\r\n        task.setProjectName(projectName);\r\n\r\n        return task;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Task.java_11",
+        "chunk": "@Override\r\n    public String toString() {\r\n        return id + \",\" + title + \",\" + DateSorting.convertDateToString(dueDate, \"dd-MM-yyyy\") + \",\" + status + \",\" + projectName;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\Task.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_Task.java_0",
+        "chunk": "public class Task {\r\n\r\n    private String id;\r\n    private String title;\r\n    private LocalDate dueDate;\r\n    private String status;\r\n    private String projectName;\r\n\r\n    /**\r\n     * @return task's ID\r\n     */\r\n\r\n    public String getId() {\r\n        return id;\r\n    }\r\n\r\n    /**\r\n     * @return IP.TodoListApplication.App.Task's title\r\n     */\r\n\r\n    public String getTitle() {\r\n        return title;\r\n    }\r\n\r\n    /**\r\n     * @return IP.TodoListApplication.App.Task's due date\r\n     */\r\n    public LocalDate getDueDate() {\r\n        return dueDate;\r\n    }\r\n\r\n    /**\r\n     * @return IP.TodoListApplication.App.Task's status\r\n     */\r\n\r\n    public String getStatus() {\r\n        return status;\r\n    }\r\n\r\n    /**\r\n     * @return IP.TodoListApplication.App.Task's project name\r\n     */\r\n    public String getProjectName() {\r\n        return projectName;\r\n    }\r\n\r\n    /**\r\n     * @param id IP.TodoListApplication.App.Task's ID to set\r\n     */\r\n    public void setId(String id) {\r\n        this.id = id;\r\n    }\r\n\r\n    /**\r\n     * @param title IP.TodoListApplication.App.Task's title to set\r\n     */\r\n\r\n    public void setTitle(String title) {\r\n        this.title = title;\r\n    }\r\n\r\n    /**\r\n     * @param dueDate IP.TodoListApplication.App.Task's due date to set\r\n     */\r\n    public void setDueDate(LocalDate dueDate) {\r\n        this.dueDate = dueDate;\r\n    }\r\n\r\n    /**\r\n     * @param status IP.TodoListApplication.App.Task's status to set\r\n     */\r\n    public void setStatus(String status) {\r\n        this.status = status;\r\n    }\r\n\r\n    /**\r\n     * @param projectName IP.TodoListApplication.App.Task's project name to set\r\n     */\r\n    public void setProjectName(String projectName) {\r\n        this.projectName = projectName;\r\n    }\r\n\r\n    /**\r\n     * buildTask is used to acquire task's elements and components\r\n     * then uses all the setters methods to build one accordingly\r\n     *\r\n     * @param id          IP.TodoListApplication.App.Task's ID to be set\r\n     * @param title       IP.TodoListApplication.App.Task's title to be set\r\n     * @param dueDate     IP.TodoListApplication.App.Task's due date to be set\r\n     * @param status      IP.TodoListApplication.App.Task's status to be set\r\n     * @param projectName IP.TodoListApplication.App.Task's project name to set\r\n     * @return task task that was built accordingly with acquired elements and components\r\n     */\r\n    public static Task buildTask(String id, String title, LocalDate dueDate, String status, String projectName) {\r\n        Task task = new Task();\r\n\r\n        task.setId(id);\r\n        task.setTitle(title);\r\n        task.setDueDate(dueDate);\r\n        task.setStatus(status);\r\n        task.setProjectName(projectName);\r\n\r\n        return task;\r\n    }\r\n\r\n    /**\r\n     * toString is used to represent all task's components as strings\r\n     *\r\n     * @return the string representation of different objects\r\n     */\r\n\r\n    @Override\r\n    public String toString() {\r\n        return id + \",\" + title + \",\" + DateSorting.convertDateToString(dueDate, \"dd-MM-yyyy\") + \",\" + status + \",\" + projectName;\r\n    }\r\n\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\TodoList.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TodoList.java_0",
+        "chunk": "public void start() {\r\n        showApplicationTitle();\r\n        while (TodoList.applicationRunning) {\r\n            showAvailableActions();\r\n            int actionNumber = readAction();\r\n            executeAction(actionNumber);\r\n\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\TodoList.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TodoList.java_1",
+        "chunk": "public void executeAction(int actionNumber) {\r\n        Actions action;\r\n        switch (actionNumber) {\r\n            case Actions.ADD_TASK:\r\n                action = new AddTask();\r\n                action.showActionsInformation();\r\n                String command = action.readUserInput();\r\n                if (!command.equals(\"0\"))\r\n                    action.executeAction(command);\r\n                break;\r\n\r\n            case Actions.MARK_AS_DONE:\r\n                if (tasks.size() > 0) {\r\n                    action = new MarkAsDone();\r\n                    action.showActionsInformation();\r\n                    String id = action.readUserInput();\r\n                    if (!id.equals(\"0\"))\r\n                        action.executeAction(id);\r\n\r\n                } else {\r\n                    System.out.println(\"Your List is empty, add tasks first! \");\r\n\r\n                }\r\n                break;\r\n\r\n            case Actions.REMOVE_TASK:\r\n                if (tasks.size() > 0) {\r\n                    action = new RemoveTask();\r\n                    action.showActionsInformation();\r\n                    String id = action.readUserInput();\r\n                    if (!id.equals(\"0\"))\r\n                        action.executeAction(id);\r\n                } else {\r\n                    System.out.println(\"Your list is empty, add tasks first! \");\r\n                }\r\n                break;\r\n\r\n            case Actions.EDIT_TASK:\r\n                if (tasks.size() > 0) {\r\n                    action = new EditTask();\r\n                    action.showActionsInformation();\r\n                    String editCommand = action.readUserInput();\r\n                    if (!editCommand.equals(0))\r\n                        action.executeAction(editCommand);\r\n                } else {\r\n                    System.out.println(\"Your list is empty, add tasks first! \");\r\n                }\r\n                break;\r\n\r\n            case Actions.DISPLAY_ALL_TASKS:\r\n                if (tasks.size() > 0) {\r\n                    action = new TasksDisplay();\r\n                    action.showActionsInformation();\r\n                    action.executeAction(null);\r\n                } else {\r\n                    System.out.println(\"Your list is empty, add tasks first! \");\r\n                }\r\n                break;\r\n\r\n            case Actions.SORT_TASKS_BY_DATE:\r\n                action = new DateSorting();\r\n                action.executeAction(null);\r\n                break;\r\n\r\n            case Actions.SORT_TASKS_PROJECT:\r\n                action = new ProjectSorting();\r\n                action.executeAction(null);\r\n                break;\r\n\r\n            case Actions.SAVE_TASKS_TO_FILE:\r\n                if (tasks.size() > 0) {\r\n\r\n                    action = new SaveTasksToFile();\r\n                    action.showActionsInformation();\r\n                    String path = action.readUserInput();\r\n                    if (!path.equals(\"0\"))\r\n                        action.executeAction(path);\r\n                } else {\r\n                    System.out.println(\"There are no tasks to be saved!\");\r\n                }\r\n                break;\r\n\r\n            case Actions.READ_FROM_FILE:\r\n                action = new ReadFromFile();\r\n                action.showActionsInformation();\r\n                String path = action.readUserInput();\r\n                if (!path.equals(\"0\"))\r\n                    action.executeAction(path);\r\n                break;\r\n\r\n            case Actions.EXIT:\r\n                applicationRunning = false;\r\n                break;\r\n\r\n\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\TodoList.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TodoList.java_2",
+        "chunk": "public void showApplicationTitle() {\r\n        System.out.println(\"To DO List Application\");\r\n        System.out.println(\"-----------------------\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\TodoList.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TodoList.java_3",
+        "chunk": "public void showAvailableActions() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"1. Add a task\");\r\n        System.out.println(\"2. Mark task as done\");\r\n        System.out.println(\"3. Remove task \");\r\n        System.out.println(\"4. Edit task\");\r\n        System.out.println(\"5. Display all tasks\");\r\n        System.out.println(\"6. Sort tasks by date\");\r\n        System.out.println(\"7. sort tasks by project\");\r\n        System.out.println(\"8. save tasks to file\");\r\n        System.out.println(\"9. read from file\");\r\n        System.out.println(\"10. Exit\");\r\n        System.out.println(\"\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\TodoList.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TodoList.java_4",
+        "chunk": "public int readAction() {\r\n        List<Integer> availableActions = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);\r\n        while (true) {\r\n            try {\r\n                System.out.print(\"Enter action: \");\r\n                Scanner scan = new Scanner(System.in);\r\n                int action = scan.nextInt();\r\n                if (availableActions.contains(action)) {\r\n                    return action;\r\n                } else {\r\n                    System.out.println(\"Please enter a valid action from the list: \");\r\n                }\r\n            } catch (Exception e) {\r\n                System.out.println(\"Action must be a number...\");\r\n\r\n            }\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\App\\TodoList.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_TodoList.java_0",
+        "chunk": "public class TodoList {\r\n\r\n    /**\r\n     * linkedHashMap was used to maintain insertion order\r\n     * <p>\r\n     * applicationRunning is used as an indicator and a boolean expression\r\n     * in the loops and switch statements below\r\n     */\r\n    public static Map<String, Task> tasks = new LinkedHashMap<>();\r\n    public static boolean applicationRunning = true;\r\n\r\n    /**\r\n     * This method start the application by running an infinite loop\r\n     * to make sure the app keeps running as long as we are using it\r\n     * and using the switch statement implemented in another method\r\n     */\r\n\r\n    public void start() {\r\n        showApplicationTitle();\r\n        while (TodoList.applicationRunning) {\r\n            showAvailableActions();\r\n            int actionNumber = readAction();\r\n            executeAction(actionNumber);\r\n\r\n        }\r\n    }\r\n\r\n    /**\r\n     * This method runs a switch statement in where it instantiate objects\r\n     * made of classes that I created as features of the application\r\n     * <p>\r\n     * for it to be used to in the start() method\r\n     *\r\n     * @param actionNumber the action that the user will insert\r\n     */\r\n\r\n    public void executeAction(int actionNumber) {\r\n        Actions action;\r\n        switch (actionNumber) {\r\n            case Actions.ADD_TASK:\r\n                action = new AddTask();\r\n                action.showActionsInformation();\r\n                String command = action.readUserInput();\r\n                if (!command.equals(\"0\"))\r\n                    action.executeAction(command);\r\n                break;\r\n\r\n            case Actions.MARK_AS_DONE:\r\n                if (tasks.size() > 0) {\r\n                    action = new MarkAsDone();\r\n                    action.showActionsInformation();\r\n                    String id = action.readUserInput();\r\n                    if (!id.equals(\"0\"))\r\n                        action.executeAction(id);\r\n\r\n                } else {\r\n                    System.out.println(\"Your List is empty, add tasks first! \");\r\n\r\n                }\r\n                break;\r\n\r\n            case Actions.REMOVE_TASK:\r\n                if (tasks.size() > 0) {\r\n                    action = new RemoveTask();\r\n                    action.showActionsInformation();\r\n                    String id = action.readUserInput();\r\n                    if (!id.equals(\"0\"))\r\n                        action.executeAction(id);\r\n                } else {\r\n                    System.out.println(\"Your list is empty, add tasks first! \");\r\n                }\r\n                break;\r\n\r\n            case Actions.EDIT_TASK:\r\n                if (tasks.size() > 0) {\r\n                    action = new EditTask();\r\n                    action.showActionsInformation();\r\n                    String editCommand = action.readUserInput();\r\n                    if (!editCommand.equals(0))\r\n                        action.executeAction(editCommand);\r\n                } else {\r\n                    System.out.println(\"Your list is empty, add tasks first! \");\r\n                }\r\n                break;\r\n\r\n            case Actions.DISPLAY_ALL_TASKS:\r\n                if (tasks.size() > 0) {\r\n                    action = new TasksDisplay();\r\n                    action.showActionsInformation();\r\n                    action.executeAction(null);\r\n                } else {\r\n                    System.out.println(\"Your list is empty, add tasks first! \");\r\n                }\r\n                break;\r\n\r\n            case Actions.SORT_TASKS_BY_DATE:\r\n                action = new DateSorting();\r\n                action.executeAction(null);\r\n                break;\r\n\r\n            case Actions.SORT_TASKS_PROJECT:\r\n                action = new ProjectSorting();\r\n                action.executeAction(null);\r\n                break;\r\n\r\n            case Actions.SAVE_TASKS_TO_FILE:\r\n                if (tasks.size() > 0) {\r\n\r\n                    action = new SaveTasksToFile();\r\n                    action.showActionsInformation();\r\n                    String path = action.readUserInput();\r\n                    if (!path.equals(\"0\"))\r\n                        action.executeAction(path);\r\n                } else {\r\n                    System.out.println(\"There are no tasks to be saved!\");\r\n                }\r\n                break;\r\n\r\n            case Actions.READ_FROM_FILE:\r\n                action = new ReadFromFile();\r\n                action.showActionsInformation();\r\n                String path = action.readUserInput();\r\n                if (!path.equals(\"0\"))\r\n                    action.executeAction(path);\r\n                break;\r\n\r\n            case Actions.EXIT:\r\n                applicationRunning = false;\r\n                break;\r\n\r\n\r\n        }\r\n    }\r\n\r\n    /**\r\n     * This method will only welcome the user by printing out\r\n     * the application title to help with the visualization\r\n     */\r\n    public void showApplicationTitle() {\r\n        System.out.println(\"To DO List Application\");\r\n        System.out.println(\"-----------------------\");\r\n    }\r\n\r\n    /**\r\n     * This method will display all the actions/features\r\n     * that the user might need, to ease the application usage.\r\n     * <p>\r\n     * Will be used to print all valid actions\r\n     */\r\n    public void showAvailableActions() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"1. Add a task\");\r\n        System.out.println(\"2. Mark task as done\");\r\n        System.out.println(\"3. Remove task \");\r\n        System.out.println(\"4. Edit task\");\r\n        System.out.println(\"5. Display all tasks\");\r\n        System.out.println(\"6. Sort tasks by date\");\r\n        System.out.println(\"7. sort tasks by project\");\r\n        System.out.println(\"8. save tasks to file\");\r\n        System.out.println(\"9. read from file\");\r\n        System.out.println(\"10. Exit\");\r\n        System.out.println(\"\");\r\n    }\r\n\r\n    /**\r\n     * readAction will allow the user to chose an action from the list,\r\n     * checks if its a valid insertion by the user\r\n     * then pass it to the start() method\r\n     *\r\n     * @return userInput to the start() method, for it to be used\r\n     */\r\n    public int readAction() {\r\n        List<Integer> availableActions = Arrays.asList(1, 2, 3, 4, 5, 6, 7, 8, 9, 10);\r\n        while (true) {\r\n            try {\r\n                System.out.print(\"Enter action: \");\r\n                Scanner scan = new Scanner(System.in);\r\n                int action = scan.nextInt();\r\n                if (availableActions.contains(action)) {\r\n                    return action;\r\n                } else {\r\n                    System.out.println(\"Please enter a valid action from the list: \");\r\n                }\r\n            } catch (Exception e) {\r\n                System.out.println(\"Action must be a number...\");\r\n\r\n            }\r\n        }\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String command) {\r\n        List<Map.Entry<String, Task>> entries = new ArrayList<>(TodoList.tasks.entrySet());\r\n        Collections.sort(entries, new Comparator<Map.Entry<String, Task>>() {\r\n            @Override\r\n            public int compare(Map.Entry<String, Task> task1, Map.Entry<String, Task> task2) {\r\n                LocalDate dueDateFirstTask = task1.getValue().getDueDate();\r\n                LocalDate dueDateSecondTask = task2.getValue().getDueDate();\r\n                int result = dueDateFirstTask.compareTo(dueDateSecondTask);\r\n                return result;\r\n            }\r\n\r\n        });\r\n\r\n        TodoList.tasks.clear();\r\n        entries.forEach((entry) -> {\r\n            TodoList.tasks.put(entry.getKey(), entry.getValue());\r\n        });\r\n\r\n        System.out.println(\"Tasks successfully Sorted!\");\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_3",
+        "chunk": "@Override\r\n            public int compare(Map.Entry<String, Task> task1, Map.Entry<String, Task> task2) {\r\n                LocalDate dueDateFirstTask = task1.getValue().getDueDate();\r\n                LocalDate dueDateSecondTask = task2.getValue().getDueDate();\r\n                int result = dueDateFirstTask.compareTo(dueDateSecondTask);\r\n                return result;\r\n            }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_4",
+        "chunk": "public static boolean isDateValid(String format, String value) {\r\n        DateTimeFormatter formattings = DateTimeFormatter.ofPattern(format);\r\n        try {\r\n            LocalDate localDate = LocalDate.parse(value, formattings);\r\n\r\n            String result = localDate.format(formattings);\r\n\r\n            return result.equals(value);\r\n        } catch (DateTimeParseException err) {\r\n\r\n        }\r\n        return false;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_5",
+        "chunk": "public static String convertDateToString(LocalDate date, String format) {\r\n        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);\r\n        String result = null;\r\n        try {\r\n            result = date.format(formatter);\r\n\r\n        } catch (DateTimeParseException e) {\r\n\r\n        }\r\n        return result;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_6",
+        "chunk": "public static LocalDate parseDate(String format, String value) {\r\n        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);\r\n        LocalDate localDate = LocalDate.parse(value, formatter);\r\n        return localDate;\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\DateSorting.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_DateSorting.java_0",
+        "chunk": "public class DateSorting extends Actions {\r\n\r\n    /**\r\n     * This is an unsupported operation added for the sake of extending my\r\n     * abstract class, therefore its unused.\r\n     */\r\n\r\n    @Override\r\n    public void showActionsInformation() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }\r\n\r\n    /**\r\n     * This is an unsupported operation added for the sake of extending my\r\n     * abstract class, therefore its unused.\r\n     */\r\n\r\n    @Override\r\n    public String readUserInput() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }\r\n\r\n    /**\r\n     * In this overridden method resides the implementation\r\n     * to compare our tasks and sort them according to their date value\r\n     * <p>\r\n     * then our map will be cleared, sorted data will be inserted\r\n     * and a message confirming the completion of tast to the user will be printed\r\n     *\r\n     * @param command command to look up\r\n     */\r\n    @Override\r\n    public void executeAction(String command) {\r\n        List<Map.Entry<String, Task>> entries = new ArrayList<>(TodoList.tasks.entrySet());\r\n        Collections.sort(entries, new Comparator<Map.Entry<String, Task>>() {\r\n            @Override\r\n            public int compare(Map.Entry<String, Task> task1, Map.Entry<String, Task> task2) {\r\n                LocalDate dueDateFirstTask = task1.getValue().getDueDate();\r\n                LocalDate dueDateSecondTask = task2.getValue().getDueDate();\r\n                int result = dueDateFirstTask.compareTo(dueDateSecondTask);\r\n                return result;\r\n            }\r\n\r\n        });\r\n\r\n        TodoList.tasks.clear();\r\n        entries.forEach((entry) -> {\r\n            TodoList.tasks.put(entry.getKey(), entry.getValue());\r\n        });\r\n\r\n        System.out.println(\"Tasks successfully Sorted!\");\r\n\r\n    }\r\n\r\n    /**\r\n     * isDateValid confirms the validity of the inserted date\r\n     * by creating Local Date and parsing it then formatting it\r\n     * to the pattern inserted in the method parameter\r\n     *\r\n     * @param format correct format of the date\r\n     * @param value  value that equals the component in the task format\r\n     * @return result result as a boolean expression\r\n     */\r\n\r\n    public static boolean isDateValid(String format, String value) {\r\n        DateTimeFormatter formattings = DateTimeFormatter.ofPattern(format);\r\n        try {\r\n            LocalDate localDate = LocalDate.parse(value, formattings);\r\n\r\n            String result = localDate.format(formattings);\r\n\r\n            return result.equals(value);\r\n        } catch (DateTimeParseException err) {\r\n\r\n        }\r\n        return false;\r\n    }\r\n\r\n    /**\r\n     * This method return a string format of the LocalDate date\r\n     * to be added and returned to the console\r\n     *\r\n     * @param date   due date\r\n     * @param format date format pattern\r\n     * @return date as a string\r\n     */\r\n    public static String convertDateToString(LocalDate date, String format) {\r\n        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);\r\n        String result = null;\r\n        try {\r\n            result = date.format(formatter);\r\n\r\n        } catch (DateTimeParseException e) {\r\n\r\n        }\r\n        return result;\r\n    }\r\n\r\n    /**\r\n     * parseDate parses a string representation of the given date\r\n     *\r\n     *\r\n     * @param format date format pattern\r\n     * @param value  value that equals the component in the task format\r\n     * @return localDate  parsed of the given String date\r\n     */\r\n    public static LocalDate parseDate(String format, String value) {\r\n        DateTimeFormatter formatter = DateTimeFormatter.ofPattern(format);\r\n        LocalDate localDate = LocalDate.parse(value, formatter);\r\n        return localDate;\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\ProjectSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_ProjectSorting.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\ProjectSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_ProjectSorting.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\ProjectSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_ProjectSorting.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String command) {\r\n        List<Map.Entry<String, Task>> entries = new ArrayList<>(TodoList.tasks.entrySet());\r\n        Collections.sort(entries, new Comparator<Map.Entry<String, Task>>() {\r\n            @Override\r\n            public int compare(Map.Entry<String, Task> firstTask, Map.Entry<String, Task> secondTask) {\r\n                String firstProject = firstTask.getValue().getProjectName();\r\n                String secondProject = secondTask.getValue().getProjectName();\r\n\r\n                int result = firstProject.compareTo(secondProject);\r\n                return result;\r\n            }\r\n\r\n\r\n        });\r\n\r\n        TodoList.tasks.clear();\r\n        entries.forEach(entry -> {\r\n            TodoList.tasks.put(entry.getKey(), entry.getValue());\r\n        });\r\n\r\n        System.out.println(\"Tasks successfully sorted\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\ProjectSorting.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_ProjectSorting.java_3",
+        "chunk": "@Override\r\n            public int compare(Map.Entry<String, Task> firstTask, Map.Entry<String, Task> secondTask) {\r\n                String firstProject = firstTask.getValue().getProjectName();\r\n                String secondProject = secondTask.getValue().getProjectName();\r\n\r\n                int result = firstProject.compareTo(secondProject);\r\n                return result;\r\n            }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\DataSorting\\ProjectSorting.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_ProjectSorting.java_0",
+        "chunk": "public class ProjectSorting extends Actions {\r\n\r\n    /**\r\n     * This is an unsupported operation added for the sake of extending my\r\n     * abstract class, therefore its unused.\r\n     */\r\n\r\n    @Override\r\n    public void showActionsInformation() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }\r\n\r\n    /**\r\n     * This is an unsupported operation added for the sake of extending my\r\n     * abstract class, therefore its unused.\r\n     */\r\n\r\n    @Override\r\n    public String readUserInput() {\r\n\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }\r\n\r\n    /**\r\n     * In this overridden method resides the implementation\r\n     * to compare our tasks and sort them according to their project name value\r\n     * <p>\r\n     * then our map will be cleared, sorted data will be inserted\r\n     * and a message confirming the completion of tast to the user will be printed\r\n     *\r\n     * @param command command to look up\r\n     */\r\n    @Override\r\n    public void executeAction(String command) {\r\n        List<Map.Entry<String, Task>> entries = new ArrayList<>(TodoList.tasks.entrySet());\r\n        Collections.sort(entries, new Comparator<Map.Entry<String, Task>>() {\r\n            @Override\r\n            public int compare(Map.Entry<String, Task> firstTask, Map.Entry<String, Task> secondTask) {\r\n                String firstProject = firstTask.getValue().getProjectName();\r\n                String secondProject = secondTask.getValue().getProjectName();\r\n\r\n                int result = firstProject.compareTo(secondProject);\r\n                return result;\r\n            }\r\n\r\n\r\n        });\r\n\r\n        TodoList.tasks.clear();\r\n        entries.forEach(entry -> {\r\n            TodoList.tasks.put(entry.getKey(), entry.getValue());\r\n        });\r\n\r\n        System.out.println(\"Tasks successfully sorted\");\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\Actions.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Actions.java_0",
+        "chunk": "public abstract void showActionsInformation();"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\Actions.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Actions.java_1",
+        "chunk": "public abstract String readUserInput();"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\Actions.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_Actions.java_2",
+        "chunk": "public abstract void executeAction(String command);"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\Actions.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_Actions.java_0",
+        "chunk": "public abstract class Actions {\r\n\r\n    //Capitalizing all letters and separating them by underscores is a java naming\r\n    //convention when naming constant variables\r\n\r\n    public static final int ADD_TASK = 1;\r\n    public static final int MARK_AS_DONE = 2;\r\n    public static final int REMOVE_TASK = 3;\r\n    public static final int EDIT_TASK = 4;\r\n    public static final int DISPLAY_ALL_TASKS = 5;\r\n    public static final int SORT_TASKS_BY_DATE = 6;\r\n    public static final int SORT_TASKS_PROJECT = 7;\r\n    public static final int SAVE_TASKS_TO_FILE = 8;\r\n    public static final int READ_FROM_FILE = 9;\r\n    public static final int EXIT = 10;\r\n\r\n    /**\r\n     * This method refers to the list of tasks\r\n     * and how it should be used to be printed to the\r\n     * user among all features classes, it's main purpose is\r\n     * to ease usage and minimize crashes\r\n     */\r\n    public abstract void showActionsInformation();\r\n\r\n    /**\r\n     * This method will represent all implementations related\r\n     * to reading user input to carry on with performing all tasks\r\n     */\r\n    public abstract String readUserInput();\r\n\r\n    /**\r\n     * This method will represent all implementations related\r\n     * to executing each task from user input and user wanted tasks\r\n     * to carry on with performing all implementations necessary\r\n     */\r\n    public abstract void executeAction(String command);\r\n\r\n\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\AddTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_AddTask.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"To add a new task, please follow the instructions and press ENTER:\");\r\n        System.out.println(\"IP.TodoListApplication.App.Task ID, IP.TodoListApplication.App.Task Title, Due Date (format: dd-mm-yyyy), IP.TodoListApplication.App.Task Status, Project Name\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\AddTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_AddTask.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"Enter Information: \");\r\n            Scanner in = new Scanner(System.in);\r\n            String userInput = in.nextLine();\r\n\r\n            if (!userInput.equals(\"0\")) {\r\n                String[] parts = userInput.split(\",\");\r\n                if (parts.length == 5) {\r\n                    if (DateSorting.isDateValid(\"dd-MM-yyyy\", parts[2])) {\r\n                        if (TodoList.tasks.get(parts[0]) == null) {\r\n                            return userInput;\r\n                        } else {\r\n                            System.out.println(\"A task with this ID already exists, try again: \");\r\n                        }\r\n                    } else {\r\n                        System.out.println(\"The date entered is invalid, try again: \");\r\n                    }\r\n                } else {\r\n                    System.out.println(\"Please follow instructions, try again: \");\r\n                }\r\n            } else {\r\n                return userInput;\r\n            }\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\AddTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_AddTask.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String command) {\r\n        String[] parts = command.split(\",\");\r\n        Task task = Task.buildTask(parts[0], parts[1], DateSorting.parseDate(\"dd-MM-yyyy\", parts[2]),\r\n                parts[3], parts[4]);\r\n\r\n        TodoList.tasks.put(task.getId(), task);\r\n        System.out.println(\"IP.TodoListApplication.App.Task successfully added!\");\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\AddTask.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_AddTask.java_0",
+        "chunk": "public class AddTask extends Actions {\r\n\r\n    /**\r\n     * This method purpose is to act as a user guide\r\n     * on how adding a task should be used for the user to\r\n     * to ease usage and minimize crashes\r\n     */\r\n    @Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"To add a new task, please follow the instructions and press ENTER:\");\r\n        System.out.println(\"IP.TodoListApplication.App.Task ID, IP.TodoListApplication.App.Task Title, Due Date (format: dd-mm-yyyy), IP.TodoListApplication.App.Task Status, Project Name\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }\r\n\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * how this program read user's input by using a scanner inside a while loop\r\n     * and then checking multiple points to ensure a successful performance\r\n     * <p>\r\n     * it will check against components completion\r\n     * ID existence\r\n     * validity of date\r\n     * and if the user correctly followed instructions\r\n     *\r\n     * @return userInput user's inserted information\r\n     */\r\n    @Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"Enter Information: \");\r\n            Scanner in = new Scanner(System.in);\r\n            String userInput = in.nextLine();\r\n\r\n            if (!userInput.equals(\"0\")) {\r\n                String[] parts = userInput.split(\",\");\r\n                if (parts.length == 5) {\r\n                    if (DateSorting.isDateValid(\"dd-MM-yyyy\", parts[2])) {\r\n                        if (TodoList.tasks.get(parts[0]) == null) {\r\n                            return userInput;\r\n                        } else {\r\n                            System.out.println(\"A task with this ID already exists, try again: \");\r\n                        }\r\n                    } else {\r\n                        System.out.println(\"The date entered is invalid, try again: \");\r\n                    }\r\n                } else {\r\n                    System.out.println(\"Please follow instructions, try again: \");\r\n                }\r\n            } else {\r\n                return userInput;\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * how adding a task method is executed and will later be used\r\n     * in the switch statement that runs the program\r\n     *\r\n     * @param command command to look up\r\n     */\r\n    @Override\r\n    public void executeAction(String command) {\r\n        String[] parts = command.split(\",\");\r\n        Task task = Task.buildTask(parts[0], parts[1], DateSorting.parseDate(\"dd-MM-yyyy\", parts[2]),\r\n                parts[3], parts[4]);\r\n\r\n        TodoList.tasks.put(task.getId(), task);\r\n        System.out.println(\"IP.TodoListApplication.App.Task successfully added!\");\r\n\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\EditTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_EditTask.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"to update a task, follow the instructions and press ENTER: \");\r\n        System.out.println(\"IP.TodoListApplication.App.Task ID, IP.TodoListApplication.App.Task Title, Due Date (format: dd-mm-yyyy), IP.TodoListApplication.App.Task Status, Project Name\");\r\n        System.out.println(\"ID here represent the ID of the task where an update will occur\");\r\n        System.out.println(\"insert a (-) when an update is not needed to that specific parameter\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\EditTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_EditTask.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.println(\"Enter information\");\r\n            Scanner in = new Scanner(System.in);\r\n            String userInput = in.nextLine();\r\n\r\n            if (!userInput.equals(0)) {\r\n                String[] parts = userInput.split(\",\");\r\n                if (parts.length == 5) {\r\n                    boolean dateValidationRequired = true;\r\n                    if (parts[2].equals(\"-\")) {\r\n                        dateValidationRequired = false;\r\n                    }\r\n\r\n                    boolean isDateValid = true;\r\n                    if (dateValidationRequired) {\r\n                        isDateValid = DateSorting.isDateValid(\"dd-mm-yyyy\", parts[2]);\r\n                    }\r\n\r\n                    if (isDateValid) {\r\n                        if (TodoList.tasks.get(parts[0]) != null) {\r\n                            return userInput;\r\n                        } else {\r\n                            System.out.println(\"ID doesn't exist, try again: \");\r\n                        }\r\n                    } else {\r\n                        System.out.println(\"Please follow instructions or enter 0 to RETURN\");\r\n                    }\r\n                } else {\r\n                    return userInput;\r\n                }\r\n            }\r\n        }\r\n\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\EditTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_EditTask.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String command) {\r\n\r\n        String[] parts = command.split(\",\");\r\n\r\n        boolean isTaskEdited = false;\r\n        if (!parts[1].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setTitle(parts[1]);\r\n            isTaskEdited = true;\r\n        }\r\n\r\n        if (!parts[2].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setDueDate(DateSorting.parseDate(\"dd-mm-yyyy\", parts[2]));\r\n            isTaskEdited = true;\r\n        }\r\n\r\n        if (!parts[3].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setStatus(parts[3]);\r\n            isTaskEdited = true;\r\n        }\r\n        if (!parts[4].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setProjectName(parts[4]);\r\n            isTaskEdited = true;\r\n        }\r\n        if (isTaskEdited) {\r\n            System.out.println(\"Tasks successfully updated!!\");\r\n        } else {\r\n            System.out.println(\"No change was applied...\");\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\EditTask.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_EditTask.java_0",
+        "chunk": "public class EditTask extends Actions {\r\n\r\n\r\n    /**\r\n     * This method purpose is to act as a user guide\r\n     * on how editing a task should be used for the user to\r\n     * to ease usage and minimize crashes\r\n     */\r\n    @Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"to update a task, follow the instructions and press ENTER: \");\r\n        System.out.println(\"IP.TodoListApplication.App.Task ID, IP.TodoListApplication.App.Task Title, Due Date (format: dd-mm-yyyy), IP.TodoListApplication.App.Task Status, Project Name\");\r\n        System.out.println(\"ID here represent the ID of the task where an update will occur\");\r\n        System.out.println(\"insert a (-) when an update is not needed to that specific parameter\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * how this program read user's input by using a scanner inside a while loop\r\n     * and then checking multiple points to ensure a successful performance\r\n     * <p>\r\n     * it will check against components completion\r\n     * ID existence\r\n     * validity of date\r\n     * and if the user correctly followed instructions\r\n     *\r\n     * @return userInput user's inserted information\r\n     */\r\n    @Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.println(\"Enter information\");\r\n            Scanner in = new Scanner(System.in);\r\n            String userInput = in.nextLine();\r\n\r\n            if (!userInput.equals(0)) {\r\n                String[] parts = userInput.split(\",\");\r\n                if (parts.length == 5) {\r\n                    boolean dateValidationRequired = true;\r\n                    if (parts[2].equals(\"-\")) {\r\n                        dateValidationRequired = false;\r\n                    }\r\n\r\n                    boolean isDateValid = true;\r\n                    if (dateValidationRequired) {\r\n                        isDateValid = DateSorting.isDateValid(\"dd-mm-yyyy\", parts[2]);\r\n                    }\r\n\r\n                    if (isDateValid) {\r\n                        if (TodoList.tasks.get(parts[0]) != null) {\r\n                            return userInput;\r\n                        } else {\r\n                            System.out.println(\"ID doesn't exist, try again: \");\r\n                        }\r\n                    } else {\r\n                        System.out.println(\"Please follow instructions or enter 0 to RETURN\");\r\n                    }\r\n                } else {\r\n                    return userInput;\r\n                }\r\n            }\r\n        }\r\n\r\n\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * of how editing a task method is executed and will later be used\r\n     * in the switch statement that runs the program\r\n     * <p>\r\n     * and it will check against all components\r\n     * to see if a change is applied or not\r\n     *\r\n     * @param command command to look up\r\n     */\r\n    @Override\r\n    public void executeAction(String command) {\r\n\r\n        String[] parts = command.split(\",\");\r\n\r\n        boolean isTaskEdited = false;\r\n        if (!parts[1].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setTitle(parts[1]);\r\n            isTaskEdited = true;\r\n        }\r\n\r\n        if (!parts[2].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setDueDate(DateSorting.parseDate(\"dd-mm-yyyy\", parts[2]));\r\n            isTaskEdited = true;\r\n        }\r\n\r\n        if (!parts[3].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setStatus(parts[3]);\r\n            isTaskEdited = true;\r\n        }\r\n        if (!parts[4].equals(\"-\")) {\r\n            TodoList.tasks.get(parts[0]).setProjectName(parts[4]);\r\n            isTaskEdited = true;\r\n        }\r\n        if (isTaskEdited) {\r\n            System.out.println(\"Tasks successfully updated!!\");\r\n        } else {\r\n            System.out.println(\"No change was applied...\");\r\n        }\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\MarkAsDone.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_MarkAsDone.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"To mark a task as done, enter ID and press ENTER: \");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\MarkAsDone.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_MarkAsDone.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"Enter task id:\");\r\n            Scanner in = new Scanner(System.in);\r\n            try {\r\n                String userInput = in.nextLine();\r\n                int userInputAsNum = Integer.parseInt(userInput);\r\n                if (userInputAsNum != 0) {\r\n                    Task task = TodoList.tasks.get(userInput);\r\n                    if (task != null) {\r\n                        return userInput;\r\n                    } else {\r\n                        System.out.println(\"There is no task with this ID, try again: \");\r\n                    }\r\n                } else {\r\n                    return userInput;\r\n                }\r\n            } catch (Exception err) {\r\n                System.out.println(\"Enter a valid ID or 0 to RETURN\");\r\n            }\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\MarkAsDone.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_MarkAsDone.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String command) {\r\n        TodoList.tasks.get(command).setStatus(\"Done\");\r\n        System.out.println(\"Status is set as Done for the task with ID: \" + command);\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\MarkAsDone.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_MarkAsDone.java_0",
+        "chunk": "public class MarkAsDone extends Actions {\r\n\r\n    /**\r\n     * This method purpose is to act as a user guide\r\n     * on how marking a task as done should be used for the user to\r\n     * to ease usage and minimize crashes\r\n     */\r\n    @Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"To mark a task as done, enter ID and press ENTER: \");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }\r\n\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * how this program read user's input by using a scanner inside a while loop\r\n     * and then checking multiple points to ensure a successful performance\r\n     * <p>\r\n     * it will check against components completion\r\n     * ID and task existence\r\n     *\r\n     * @return userInput user's inserted information\r\n     */\r\n    @Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"Enter task id:\");\r\n            Scanner in = new Scanner(System.in);\r\n            try {\r\n                String userInput = in.nextLine();\r\n                int userInputAsNum = Integer.parseInt(userInput);\r\n                if (userInputAsNum != 0) {\r\n                    Task task = TodoList.tasks.get(userInput);\r\n                    if (task != null) {\r\n                        return userInput;\r\n                    } else {\r\n                        System.out.println(\"There is no task with this ID, try again: \");\r\n                    }\r\n                } else {\r\n                    return userInput;\r\n                }\r\n            } catch (Exception err) {\r\n                System.out.println(\"Enter a valid ID or 0 to RETURN\");\r\n            }\r\n        }\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * of how marking a task as done method is executed and will later be used\r\n     * in the switch statement that runs the program\r\n     * <p>\r\n     * its main purpose is to set a task's status with a given ID to Done\r\n     *\r\n     * @param command command to look up\r\n     */\r\n    @Override\r\n    public void executeAction(String command) {\r\n        TodoList.tasks.get(command).setStatus(\"Done\");\r\n        System.out.println(\"Status is set as Done for the task with ID: \" + command);\r\n\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\RemoveTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_RemoveTask.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"To remove a task, enter ID and press ENTER\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\RemoveTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_RemoveTask.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"Enter ID: \");\r\n            Scanner in = new Scanner(System.in);\r\n            try {\r\n                String userInput = in.nextLine();\r\n                int userInputAsNum = Integer.parseInt(userInput);\r\n                if (userInputAsNum != 0) {\r\n                    Task task = TodoList.tasks.get(userInput);\r\n                    if (task != null) {\r\n                        return userInput;\r\n                    } else {\r\n                        System.out.println(\"ID doesn't exist, try another ID: \");\r\n                    }\r\n                } else {\r\n                    return userInput;\r\n                }\r\n\r\n            } catch (Exception err) {\r\n                System.out.println(\"Please enter a valid ID or 0 to RETURN\");\r\n            }\r\n\r\n        }\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\RemoveTask.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_RemoveTask.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String command) {\r\n        TodoList.tasks.remove(command);\r\n\r\n        System.out.println(\"IP.TodoListApplication.App.Task with ID: \" + command + \", was successfully removed...\");\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\RemoveTask.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_RemoveTask.java_0",
+        "chunk": "public class RemoveTask extends Actions {\r\n    /**\r\n     * This method purpose is to act as a user guide\r\n     * on how removing a task is done and how it should be used for the user to\r\n     * to ease their usage and minimize related crashes\r\n     */\r\n    @Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"To remove a task, enter ID and press ENTER\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * how this program read user's input by using a scanner inside a while loop\r\n     * and then checking multiple points to ensure a successful performance\r\n     * <p>\r\n     * it will check against components completion\r\n     * ID and task to be removed existence\r\n     * and if the user correctly followed instructions\r\n     *\r\n     * @return userInput user's inserted information\r\n     */\r\n    @Override\r\n    public String readUserInput() {\r\n\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"Enter ID: \");\r\n            Scanner in = new Scanner(System.in);\r\n            try {\r\n                String userInput = in.nextLine();\r\n                int userInputAsNum = Integer.parseInt(userInput);\r\n                if (userInputAsNum != 0) {\r\n                    Task task = TodoList.tasks.get(userInput);\r\n                    if (task != null) {\r\n                        return userInput;\r\n                    } else {\r\n                        System.out.println(\"ID doesn't exist, try another ID: \");\r\n                    }\r\n                } else {\r\n                    return userInput;\r\n                }\r\n\r\n            } catch (Exception err) {\r\n                System.out.println(\"Please enter a valid ID or 0 to RETURN\");\r\n            }\r\n\r\n        }\r\n\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * of how removing an existing task is done and how the method is executed and will later be used\r\n     * in the switch statement that runs the program\r\n     * <p>\r\n     * its main purpose is to remove the wanted task and confirms the completion to the user\r\n     *\r\n     * @param command command to look up\r\n     */\r\n    @Override\r\n    public void executeAction(String command) {\r\n        TodoList.tasks.remove(command);\r\n\r\n        System.out.println(\"IP.TodoListApplication.App.Task with ID: \" + command + \", was successfully removed...\");\r\n\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\TasksDisplay.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TasksDisplay.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"Here are all the tasks: \");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\TasksDisplay.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TasksDisplay.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\TasksDisplay.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TasksDisplay.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String command) {\r\n        TodoList.tasks.forEach((key, task) -> {\r\n            System.out.println(\"ID: \" + key + \", Title: \" + task.getTitle() + \", Due Date: \"\r\n                    + DateSorting.convertDateToString(task.getDueDate(), \"dd-MM-yyyy\") + \", Status: \"\r\n                    + task.getStatus() + \", Project: \" + task.getProjectName());\r\n        });\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\Features\\TasksDisplay.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_TasksDisplay.java_0",
+        "chunk": "public class TasksDisplay extends Actions {\r\n    /**\r\n     * inserts a title\r\n     */\r\n    @Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"Here are all the tasks: \");\r\n    }\r\n\r\n    /**\r\n     * This is an unsupported operation added for the sake of extending my\r\n     * abstract class, therefore its unused.\r\n     */\r\n    @Override\r\n    public String readUserInput() {\r\n        throw new UnsupportedOperationException(\"The requested operation is not supported.\");\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * of how to display all existing tasks and how the method is executed and will later be used\r\n     * in the switch statement that runs the program\r\n     * <p>\r\n     * its main purpose is to print out all existing tasks to the user\r\n     *\r\n     * @param command command to look up\r\n     */\r\n    @Override\r\n    public void executeAction(String command) {\r\n        TodoList.tasks.forEach((key, task) -> {\r\n            System.out.println(\"ID: \" + key + \", Title: \" + task.getTitle() + \", Due Date: \"\r\n                    + DateSorting.convertDateToString(task.getDueDate(), \"dd-MM-yyyy\") + \", Status: \"\r\n                    + task.getStatus() + \", Project: \" + task.getProjectName());\r\n        });\r\n\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\ReadFromFile.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_ReadFromFile.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"Please enter path to read:\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\ReadFromFile.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_ReadFromFile.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"path:\");\r\n\r\n            Scanner scan = new Scanner(System.in);\r\n            String userInput = scan.nextLine();\r\n\r\n            return userInput;\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\ReadFromFile.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_ReadFromFile.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String path) {\r\n        try {\r\n            Scanner scanner = new Scanner(new File(path));\r\n            while (scanner.hasNextLine()) {\r\n                String file = scanner.nextLine();\r\n                String[] parts = file.split(\",\");\r\n                Task task = Task.buildTask(parts[0], parts[1], DateSorting.parseDate(\"dd-MM-yyyy\", parts[2]),\r\n                        parts[3], parts[4]);\r\n                if (TodoList.tasks.get(parts[0]) != null) {\r\n                    TodoList.tasks.replace(parts[0], task);\r\n                } else {\r\n                    TodoList.tasks.put(parts[0], task);\r\n                }\r\n\r\n            }\r\n            scanner.close();\r\n            System.out.println(\"Tasks are being read!\");\r\n        } catch (FileNotFoundException e) {\r\n            System.out.println(\"Path or file do not exist...\");\r\n\r\n        }\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\ReadFromFile.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_ReadFromFile.java_0",
+        "chunk": "public class ReadFromFile extends Actions {\r\n    /**\r\n     * This method purpose is to act as a user guide\r\n     * on how reading a task is done and how it should be used for the user to\r\n     * to ease their usage and minimize related crashes\r\n     */\r\n    @Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"Please enter path to read:\");\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * how this program read user's input by using a scanner inside a while loop\r\n     *\r\n     * @return userInput user's inserted information\r\n     */\r\n\r\n    @Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"path:\");\r\n\r\n            Scanner scan = new Scanner(System.in);\r\n            String userInput = scan.nextLine();\r\n\r\n            return userInput;\r\n        }\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * of how a given path is taken from the user\r\n     * logged into to fetch information and display it to user\r\n     * <p>\r\n     * IMPORTANT after executing read, press 5 to display the files that was read\r\n     * from the file\r\n     *\r\n     * @param path path of the local file to be read by the program\r\n     */\r\n\r\n    @Override\r\n    public void executeAction(String path) {\r\n        try {\r\n            Scanner scanner = new Scanner(new File(path));\r\n            while (scanner.hasNextLine()) {\r\n                String file = scanner.nextLine();\r\n                String[] parts = file.split(\",\");\r\n                Task task = Task.buildTask(parts[0], parts[1], DateSorting.parseDate(\"dd-MM-yyyy\", parts[2]),\r\n                        parts[3], parts[4]);\r\n                if (TodoList.tasks.get(parts[0]) != null) {\r\n                    TodoList.tasks.replace(parts[0], task);\r\n                } else {\r\n                    TodoList.tasks.put(parts[0], task);\r\n                }\r\n\r\n            }\r\n            scanner.close();\r\n            System.out.println(\"Tasks are being read!\");\r\n        } catch (FileNotFoundException e) {\r\n            System.out.println(\"Path or file do not exist...\");\r\n\r\n        }\r\n\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\SaveTasksToFile.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_SaveTasksToFile.java_0",
+        "chunk": "@Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"Please enter path to file:\");\r\n\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\SaveTasksToFile.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_SaveTasksToFile.java_1",
+        "chunk": "@Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"path:\");\r\n\r\n            Scanner scan = new Scanner(System.in);\r\n            String userInput = scan.nextLine();\r\n\r\n            return userInput;\r\n\r\n        }\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\SaveTasksToFile.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_SaveTasksToFile.java_2",
+        "chunk": "@Override\r\n    public void executeAction(String path) {\r\n        try {\r\n            PrintWriter pw = new PrintWriter(new FileOutputStream(path));\r\n\r\n            List<String> lines = TodoList.tasks.entrySet().stream().map(entry -> entry.getValue().toString()).collect(Collectors.toList());\r\n\r\n            lines.forEach((line) -> {\r\n                pw.println(line);\r\n            });\r\n            pw.close();\r\n            System.out.println(\"task succesfully saved into file: \" + path);\r\n        } catch (FileNotFoundException e) {\r\n            System.out.println(\"Path or file do not exist...\");\r\n        }\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\main\\java\\IP\\TodoListApplication\\SaveRead\\SaveTasksToFile.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_SaveTasksToFile.java_0",
+        "chunk": "public class SaveTasksToFile extends Actions {\r\n\r\n    /**\r\n     * This method purpose is to act as a user guide\r\n     * on how saving a task is done and how it should be used for the user to\r\n     * to ease their usage and minimize related crashes\r\n     */\r\n\r\n    @Override\r\n    public void showActionsInformation() {\r\n        System.out.println(\"\");\r\n        System.out.println(\"Please enter path to file:\");\r\n\r\n        System.out.println(\"\");\r\n        System.out.println(\"Enter 0 to RETURN\");\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * how this program read user's input\r\n     *\r\n     * @return userInput user's inserted information\r\n     */\r\n\r\n    @Override\r\n    public String readUserInput() {\r\n        while (true) {\r\n            System.out.println(\"\");\r\n            System.out.print(\"path:\");\r\n\r\n            Scanner scan = new Scanner(System.in);\r\n            String userInput = scan.nextLine();\r\n\r\n            return userInput;\r\n\r\n        }\r\n    }\r\n\r\n    /**\r\n     * In this overridden method reside the implementation of\r\n     * of how a given path is taken from the user\r\n     * logged into to save information of tasks inserted by the user\r\n     * <p>\r\n     * it used a PrintWriter and print out a message to confirm success or failure\r\n     *\r\n     * @param path path to the local files for tasks to be saved in\r\n     */\r\n    @Override\r\n    public void executeAction(String path) {\r\n        try {\r\n            PrintWriter pw = new PrintWriter(new FileOutputStream(path));\r\n\r\n            List<String> lines = TodoList.tasks.entrySet().stream().map(entry -> entry.getValue().toString()).collect(Collectors.toList());\r\n\r\n            lines.forEach((line) -> {\r\n                pw.println(line);\r\n            });\r\n            pw.close();\r\n            System.out.println(\"task succesfully saved into file: \" + path);\r\n        } catch (FileNotFoundException e) {\r\n            System.out.println(\"Path or file do not exist...\");\r\n        }\r\n\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\DateSortingTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSortingTest.java_0",
+        "chunk": "@Test\r\n    public void isDateValid() {\r\n\r\n        String date = \"12-12-2020\";\r\n\r\n        boolean expected = true;\r\n\r\n        assertEquals(expected, DateSorting.isDateValid(\"dd-MM-yyyy\", date));\r\n\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\DateSortingTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSortingTest.java_1",
+        "chunk": "@Test\r\n    public void convertDateToString() {\r\n        LocalDate dueDate = LocalDate.of(2021, 10, 13);\r\n\r\n\r\n        String expected = \"13-10-2021\";\r\n\r\n        Assert.assertEquals(expected, DateSorting.convertDateToString(dueDate, \"dd-MM-yyyy\"));\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\DateSortingTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_DateSortingTest.java_2",
+        "chunk": "@Test\r\n    public void parseDate() {\r\n\r\n        LocalDate expected = LocalDate.of(2020, 10, 10);\r\n\r\n        String userInput = \"10-10-2020\";\r\n\r\n        assertEquals(expected, DateSorting.parseDate(\"dd-MM-yyyy\", userInput));\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\DateSortingTest.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_DateSortingTest.java_0",
+        "chunk": "public class DateSortingTest {\r\n\r\n\r\n    @Test\r\n    public void isDateValid() {\r\n\r\n        String date = \"12-12-2020\";\r\n\r\n        boolean expected = true;\r\n\r\n        assertEquals(expected, DateSorting.isDateValid(\"dd-MM-yyyy\", date));\r\n\r\n\r\n    }\r\n\r\n    @Test\r\n    public void convertDateToString() {\r\n        LocalDate dueDate = LocalDate.of(2021, 10, 13);\r\n\r\n\r\n        String expected = \"13-10-2021\";\r\n\r\n        Assert.assertEquals(expected, DateSorting.convertDateToString(dueDate, \"dd-MM-yyyy\"));\r\n    }\r\n\r\n    @Test\r\n    public void parseDate() {\r\n\r\n        LocalDate expected = LocalDate.of(2020, 10, 10);\r\n\r\n        String userInput = \"10-10-2020\";\r\n\r\n        assertEquals(expected, DateSorting.parseDate(\"dd-MM-yyyy\", userInput));\r\n    }\r\n}"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_0",
+        "chunk": "@Test\r\n    public void getId() {\r\n        Task task = new Task();\r\n\r\n        task.setId(\"1\");\r\n\r\n        String expected = \"1\";\r\n        assertEquals(expected, task.getId());\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_1",
+        "chunk": "@Test\r\n    public void getTitle() {\r\n        Task task = new Task();\r\n\r\n        task.setId(\"1\");\r\n\r\n        String expected = \"1\";\r\n        assertEquals(expected, task.getId());\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_2",
+        "chunk": "@Test\r\n    public void getDueDate() {\r\n\r\n\r\n        Task task = new Task();\r\n\r\n        LocalDate dueDate = LocalDate.of(2020, 12, 12);\r\n        task.setDueDate(dueDate);\r\n\r\n        LocalDate expected = LocalDate.of(2020, 12, 12);\r\n\r\n        assertEquals(expected, task.getDueDate());\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_3",
+        "chunk": "@Test\r\n    public void getStatus() {\r\n        Task task = new Task();\r\n\r\n        task.setTitle(\"Working\");\r\n\r\n        String expected = \"Working\";\r\n        assertEquals(expected, task.getTitle());\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_4",
+        "chunk": "@Test\r\n    public void getProjectName() {\r\n        Task task = new Task();\r\n\r\n        task.setProjectName(\"Coding\");\r\n\r\n        String expected = \"Coding\";\r\n        assertEquals(expected, task.getProjectName());\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_5",
+        "chunk": "@Test\r\n    public void setId() {\r\n        Task task = new Task();\r\n\r\n        task.setId(\"1122\");\r\n\r\n        String expected = \"1122\";\r\n        assertEquals(expected, task.getId());\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_6",
+        "chunk": "@Test\r\n    public void setTitle() {\r\n        Task task = new Task();\r\n\r\n        task.setTitle(\"Clear-Cache\");\r\n\r\n        String expected = \"Clear-Cache\";\r\n        assertEquals(expected, task.getTitle());\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_7",
+        "chunk": "@Test\r\n    public void setDueDate() {\r\n\r\n\r\n        Task task = new Task();\r\n\r\n        LocalDate dueDate = LocalDate.of(2021, 10, 13);\r\n\r\n        task.setDueDate(dueDate);\r\n\r\n        LocalDate expected = LocalDate.of(2021, 10, 13);\r\n\r\n        assertEquals(expected, task.getDueDate());\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_8",
+        "chunk": "@Test\r\n    public void setStatus() {\r\n        Task task = new Task();\r\n\r\n        task.setStatus(\"in-progress\");\r\n\r\n        String expected = \"in-progress\";\r\n        assertEquals(expected, task.getStatus());\r\n\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "function",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_9",
+        "chunk": "@Test\r\n    public void setProjectName() {\r\n        Task task = new Task();\r\n\r\n        task.setProjectName(\"Monthly-Supply\");\r\n\r\n        String expected = \"Monthly-Supply\";\r\n        assertEquals(expected, task.getProjectName());\r\n    }"
+    },
+    {
+        "repo": "Todo-List-Application-Java",
+        "path": "repos\\Todo-List-Application-Java\\src\\test\\java\\TaskTest.java",
+        "language": "java",
+        "chunk_type": "class",
+        "chunk_id": "Todo-List-Application-Java_TaskTest.java_0",
+        "chunk": "public class TaskTest {\r\n\r\n    @Test\r\n    public void getId() {\r\n        Task task = new Task();\r\n\r\n        task.setId(\"1\");\r\n\r\n        String expected = \"1\";\r\n        assertEquals(expected, task.getId());\r\n\r\n    }\r\n\r\n    @Test\r\n    public void getTitle() {\r\n        Task task = new Task();\r\n\r\n        task.setId(\"1\");\r\n\r\n        String expected = \"1\";\r\n        assertEquals(expected, task.getId());\r\n    }\r\n\r\n    @Test\r\n    public void getDueDate() {\r\n\r\n\r\n        Task task = new Task();\r\n\r\n        LocalDate dueDate = LocalDate.of(2020, 12, 12);\r\n        task.setDueDate(dueDate);\r\n\r\n        LocalDate expected = LocalDate.of(2020, 12, 12);\r\n\r\n        assertEquals(expected, task.getDueDate());\r\n\r\n    }\r\n\r\n\r\n    @Test\r\n    public void getStatus() {\r\n        Task task = new Task();\r\n\r\n        task.setTitle(\"Working\");\r\n\r\n        String expected = \"Working\";\r\n        assertEquals(expected, task.getTitle());\r\n\r\n    }\r\n\r\n    @Test\r\n    public void getProjectName() {\r\n        Task task = new Task();\r\n\r\n        task.setProjectName(\"Coding\");\r\n\r\n        String expected = \"Coding\";\r\n        assertEquals(expected, task.getProjectName());\r\n\r\n    }\r\n\r\n    @Test\r\n    public void setId() {\r\n        Task task = new Task();\r\n\r\n        task.setId(\"1122\");\r\n\r\n        String expected = \"1122\";\r\n        assertEquals(expected, task.getId());\r\n    }\r\n\r\n    @Test\r\n    public void setTitle() {\r\n        Task task = new Task();\r\n\r\n        task.setTitle(\"Clear-Cache\");\r\n\r\n        String expected = \"Clear-Cache\";\r\n        assertEquals(expected, task.getTitle());\r\n\r\n    }\r\n\r\n    @Test\r\n    public void setDueDate() {\r\n\r\n\r\n        Task task = new Task();\r\n\r\n        LocalDate dueDate = LocalDate.of(2021, 10, 13);\r\n\r\n        task.setDueDate(dueDate);\r\n\r\n        LocalDate expected = LocalDate.of(2021, 10, 13);\r\n\r\n        assertEquals(expected, task.getDueDate());\r\n\r\n    }\r\n\r\n    @Test\r\n    public void setStatus() {\r\n        Task task = new Task();\r\n\r\n        task.setStatus(\"in-progress\");\r\n\r\n        String expected = \"in-progress\";\r\n        assertEquals(expected, task.getStatus());\r\n\r\n    }\r\n\r\n    @Test\r\n    public void setProjectName() {\r\n        Task task = new Task();\r\n\r\n        task.setProjectName(\"Monthly-Supply\");\r\n\r\n        String expected = \"Monthly-Supply\";\r\n        assertEquals(expected, task.getProjectName());\r\n    }\r\n\r\n}"
+    }
+]

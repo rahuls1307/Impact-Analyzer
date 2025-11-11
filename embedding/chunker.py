@@ -34,6 +34,7 @@ LANGUAGE_NODES = {
 
 
 def extract_chunks(code_bytes, lang_key, level="function"):
+    # print("in exptract chunks " + code_bytes + lang_key +level)
     """Parse code with Tree-sitter and extract function/class chunks."""
     parser = get_parser(lang_key)
     tree = parser.parse(code_bytes)
@@ -78,11 +79,13 @@ def process_repo(repo_path):
         if ext not in LANGUAGE_EXTENSIONS:
             continue
         lang = LANGUAGE_EXTENSIONS[ext]
-
+        print("languageee :" +lang)
         try:
             with open(path, "rb") as f:
                 code = f.read()
+                print("this is code")
         except Exception:
+            print("xception in reading code")
             continue
 
         if lang == "sql":
@@ -98,6 +101,7 @@ def process_repo(repo_path):
                 })
         else:
             for level in ["function", "class"]:
+                # print("levelll "+code)
                 chunks = extract_chunks(code, lang, level)
                 for i, chunk in enumerate(chunks):
                     results.append({
